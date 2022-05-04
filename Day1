@@ -1,0 +1,25 @@
+class StringClass(object):
+  def __init__(self, string):
+    self.string="12314532"
+    print(len(string))
+  
+  def Covert(string):
+    li = list(string.split(" "))
+    return li
+  
+2nd program
+
+  Class PairsPossible(StringClass):
+    def __init__(self):
+    StringClass.__init__(self,string)
+    
+    test_list = [1,2,3,1,4,5,3,2]
+    print("Given list"+str(test_list))
+    res=list(combinations(test_list,2))
+    print("all possible pairs:" + str(res))
+    
+ 3rd program
+ Class SearchCommonElements:
+  
+  
+  
