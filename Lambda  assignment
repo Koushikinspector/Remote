@@ -1,0 +1,5 @@
+2nd program
+
+lst1=["Alaska", "Alabama", "Arizona", "Arkansas", "Colorado", "Montana", "Nevada"]
+k=list(map(lambda x:x.count('a')+x.count('A'),lst1))
+print(k)
