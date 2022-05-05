@@ -1,0 +1,52 @@
+Duplicates in array
+
+tuple = [[1, 2, 3,1],[2,4,5,2,4] ,[4, 2, 7, 8, 8, 3]]
+
+print("Duplicate elements in given array: ");
+
+for i in range(0, len(tuple)):
+    for j in range(i + 1, len(tuple)):
+        if (tuple[i] == tuple[j]):
+            print(tuple[j]);
+            
+2nd program
+list1 = ["hello" , "take"]
+list2 = ["dear","sir"]
+list1=list1+list2
+print(list1)
+for x in list1,2:
+    
+    print(list1[0] + list1[2])
+    print(list1[0] + list1[3])
+    print(list1[1] + list1[2])
+    print(list1[1] + list1[3])
+    
+3rd program
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+print(list1[2])
+list1[2][1][2].extend(['h','i','j'])
+print(list1)
+
+4th program
+test_Key = ["Ten", "Twenty", "Thirty"]
+test_Value = [10,20,30]
+res={test_Key[i]:test_Value[i] for i in range(len(test_Key))}
+print(str(res))
+
+5th program
+dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30} 
+dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50} 
+
+dict1=dict1+dict2
+
+6th program
+sampleDict = { 
+  "name": "Kelly", 
+  "age":25, 
+  "salary": 8000, 
+  "city": "New york" 
+} 
+new_key="location"
+old_key="city"
+sampleDict[new_key]=sampleDict.pop(old_key)
+print(sampleDict)
