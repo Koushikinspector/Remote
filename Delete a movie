@@ -1,0 +1,7 @@
+import pandas as pd
+url = "BMSData.csv"
+df = pd.read_csv(url)
+df_s1 = df[2:]
+df_s1 = df_s1.drop(df_s1.query('Title==Lorem').index)
+print(df_s1)
+
