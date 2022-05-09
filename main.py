@@ -37,6 +37,11 @@ def timings():
 	if time==2:
 		print("only 30 tickets are available")
 	ticket = int(input("number of ticket do you want?: "))
+		if ticket >30:
+			print("Availablle tickets only 30")
+		elif ticket <=30:
+			print("Your "+ticket + "tickets has successfully Booked")
+			
 
 	print("Thanks for booking")
 t_movie()
