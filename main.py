@@ -9,12 +9,9 @@ with open('BMSData.csv', mode='r') as file:
 	count=0
 	for row in reader:
 		print(row)
-global f
-f = 0
+
 
 def t_movie():
-	global f
-	f = f+1
 	print("welcome to user1")
 	print("1,Book your ticket")
 	print("2,Cancel your ticket")
