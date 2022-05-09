@@ -1,6 +1,5 @@
 import csv
 
-# opening the CSV file
 with open('BMSData.csv', mode ='w')as file:
 	writer = csv.writer(file)
 	writer.writerow(["Lorem","Horror","1hr 20mins","John doe","Moon F","5/10","English","8,10.05,12.10,2.15,4.20","5","8AM","15mins","30mins","50"])
@@ -26,7 +25,7 @@ def t_movie():
 	return 0
 
 
-# this theater function used to select screen
+
 def timings():
 	print("What timings do you want choose ")
 	print("1,8-12")
