@@ -1,0 +1,36 @@
+import csv
+
+with open('BMSData.csv', mode ='w')as file:
+	writer = csv.writer(file)
+	writer.writerow(["Lorem","Horror","1hr 20mins","John doe","Moon F","5/10","English","8,10.05,12.10,2.15,4.20","5","8AM","15mins","30mins","50"])
+
+with open('BMSData.csv', mode='r') as file:
+	reader = csv.reader(file)
+	count=0
+	for row in reader:
+		print(row)
+global f
+f = 0
+
+def t_movie():
+	global f
+	f = f+1
+	print("welcome to user1")
+	print("1,Book your ticket")
+	print("2,Cancel your ticket")
+	print("3,Give user rating")
+	movie = int(input("choose your option: "))
+	if movie == 1:
+		timings()
+  elif movie==2:
+    cancel()
+	return 0
+
+def cancel():
+	cancelTicket = int(input("how many tickets do you want to cancel?"))
+	if cancelTicket<=10:
+		print("cancelled successfully")
+	elif cancelTicket>=11:
+		print("you can cancell upto 10 tickets only ")
+t_movie()
+
